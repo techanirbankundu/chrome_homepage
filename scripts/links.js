@@ -6,7 +6,7 @@ const linkList = document.getElementById('linkList');
 // Function to render the links from localStorage
 // Function to render the links from localStorage
 function renderLinks() {
-    const links = JSON.parse(localStorage.getItem('links')) || [];
+    const links = JSON.parse(localStorage.getItem('slinks')) || [];
     linkList.innerHTML = ''; // Clear current list
 
     links.forEach((link, index) => {
@@ -35,9 +35,9 @@ function renderLinks() {
 function addLink() {
     const link = linkInput.value;
     if (link) {
-        const links = JSON.parse(localStorage.getItem('links')) || [];
+        const links = JSON.parse(localStorage.getItem('slinks')) || [];
         links.push(link); // Add the new link
-        localStorage.setItem('links', JSON.stringify(links)); // Store in localStorage
+        localStorage.setItem('slinks', JSON.stringify(links)); // Store in localStorage
         renderLinks(); // Update the displayed list
         linkInput.value = ''; // Clear the input field
     }
@@ -45,9 +45,9 @@ function addLink() {
 
 // Function to remove a link
 function removeLink(index) {
-    const links = JSON.parse(localStorage.getItem('links')) || [];
+    const links = JSON.parse(localStorage.getItem('slinks')) || [];
     links.splice(index, 1); // Remove the link by index
-    localStorage.setItem('links', JSON.stringify(links)); // Update localStorage
+    localStorage.setItem('slinks', JSON.stringify(links)); // Update localStorage
     renderLinks(); // Update the displayed list
 }
 

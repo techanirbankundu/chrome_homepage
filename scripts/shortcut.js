@@ -37,10 +37,10 @@ document.getElementById('linkForm').addEventListener('submit', (e) => {
     const titleInput = document.getElementById('titleInput').value; // Get title from the input field
 
     // Validate URL format
-    if (!linkInput.startsWith('http://') && !linkInput.startsWith('https://')) {
-        alert('Please enter a valid URL starting with http:// or https://');
-        return;
-    }
+    // if (!linkInput.startsWith('http://') && !linkInput.startsWith('https://')) {
+    //     alert('Please enter a valid URL starting with http:// or https://');
+    //     return;
+    // }
 
     const newLink = { url: linkInput, title: titleInput }; // Use title from input
 
