@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(1, 11, 32) !important;
+    color: #fff !important;
+}
+
+
+.modal-content{
+    background-color: rgb(1, 11, 32) !important;
+}
+.btnor {
+    background-color: #ff6600 !important;
+    color: #fff !important;
+
+}
+
+.offcanvas {
+    background-color: rgb(1, 11, 32) !important;
+    color: #fff !important;
+}
+
+.timer-container {
+    text-align: center;
+    width: 100%;
+}
+
+#currentTime {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 6 columns */
+    grid-template-rows: repeat(6, 1fr);
+    /* 4 rows */
+    /* width: 90vw; */
+    /* Make the grid fill 90% of the viewport width */
+    height: 60vh;
+    /* Make the grid fill 60% of the viewport height */
+    gap: 10px;
+    margin: 0 auto;
+    color: black;
+    font-weight: bolder;
+}
+
+.grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.grid .active {
+    background-color: lightgreen;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+
+/* Style the links */
+#linkList a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#linkList a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* List item styling */
+.list-group-item {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+    margin: 8px 0px;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    /* Prevent wrapping */
+    overflow: hidden;
+    /* Hide overflow content */
+    text-overflow: ellipsis;
+    /* Show '...' when overflow occurs */
+    display: block;
+    /* Make the link a block-level element */
+    max-width: 85%;
+}
+
+/* Styling the delete button */
+.btn-danger {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+.add_link_wrap {
+    display: flex;
+}
+
+.add_link_wrap button {
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #00ff6aea;
+}
+
+.shortcuts {
+    height: 80vh;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    overflow-x: auto;
+    background-color: white;
+    /* opacity: 3; */
+    background-color: rgba(12, 1, 33, 0.489) !important;
+    /* Adjust the last value (0.8) for transparency */
+    backdrop-filter: blur(8px);
+    border-radius: 15px 0 0 15px;
+
+
+}
+
+.shortcuts::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.shortcuts::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.shortcuts::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.shortcuts::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.itm-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itm-add svg:hover {
+    color: #c9c9c9;
+    transition: 0.1 s ease-in-out;
+}
+
+.item img {
+    height: 35px;
+    width: 35px;
+    border-radius: 35%;
+}
